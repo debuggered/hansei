@@ -3,6 +3,7 @@
   const instruct = aoc.inputfile('./day08.txt', true);
 
   let pocket = {}
+  let top = 0
   instruct.forEach(elements => {
     elements = elements.split(' ');
     let ins_name = elements[0];
@@ -17,14 +18,11 @@
     if (eval(pocket[con_name] + " " + con_symbol + " " + con_result)) {
       let ins_value = (pocket[ins_name] || 0)
       ins_value += (ins_direction == "inc")? ins_duration : (0 - ins_duration);
-      pocket[ins_name] = ins_value; 
+      pocket[ins_name] = ins_value;
+      top = (ins_value > top)? ins_value : top;
     }
   })
 
-tmax = Object.entries(pocket).reduce((a, b) => {
-    return (a[1] > b[1]) ? a : b ;
-});
-
-console.log(tmax[1]);
+console.log(top);
 
 })()
