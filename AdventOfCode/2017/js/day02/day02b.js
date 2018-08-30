@@ -1,19 +1,18 @@
-(() => {
-	const aoc = require('../lib/aoc.js');
-	let day2 = lines =>{
-		let checksum = 0;
-		lines.forEach(function(line){
-			let elements = line.split(' ').map( Number ).sort();
-			aoc.allcompare(elements, (numA, numB) => {
-				if (numA != numB && numA > numB && numA % numB == 0) checksum += (numA / numB);
-			})
-		});
-		return checksum;
-	}
+const aoc = require('../lib/aoc.js');
+const spread = aoc.inputfile('./day02.txt', true);
 
-	if (day2(['5 9 2 8','9 4 7 3','3 8 6 5']) != 9) {throw new Error('Something is Wrong!')};
+let day2 = lines => 
+Array.from(lines)
+  .map(line => {
+    elements = line.split(' ');
+	let diff = 0;
+	aoc.allcompare(elements, (numA, numB) => {
+		if(numA != numB && numA % numB == 0) { 
+			diff = numA / numB;
+		}
+	})
+	return diff;
+  })
+  .reduce((checksum, item) => checksum + item)
 
-	const spread = aoc.inputfile('./day02.txt', true);
-	console.log(day2(spread));
-	
-})()
+console.log(day2(spread));

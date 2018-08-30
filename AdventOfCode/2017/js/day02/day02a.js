@@ -5,9 +5,7 @@ let day2 = lines =>
 Array.from(lines)
   .map(line => {
     elements = line.split(' ');
-    let tmin = Math.min.apply(null, elements);
-    let tmax = Math.max.apply(null, elements);
-    return tmax - tmin;
+    return Math.max.apply(null, elements) - Math.min.apply(null, elements);
   })
   .reduce((checksum, item) => checksum + item)
   
