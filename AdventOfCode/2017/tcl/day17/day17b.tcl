@@ -1,4 +1,4 @@
-set max 50000
+set max 49999999
 set spin 366
 
 set stage {0}
