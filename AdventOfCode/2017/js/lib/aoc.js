@@ -12,5 +12,4 @@ module.exports = {
         callback(wordA, wordB, indexA, indexB))
     })
   },
-
 }
