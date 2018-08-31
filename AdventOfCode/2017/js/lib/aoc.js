@@ -7,8 +7,8 @@ module.exports = {
 	},
 
   allcompare: (input, callback) => {
-    input.map((wordA, indexA, array) => {
-      array.map((wordB, indexB) => 
+    input.forEach((wordA, indexA) => {
+      input.forEach((wordB, indexB) => 
         callback(wordA, wordB, indexA, indexB))
     })
   },
