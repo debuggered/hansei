@@ -1,3 +1,5 @@
+
+/*
 set fsize [file size "day09.txt"]
 set fp [open "day09.txt" r]
 set stream [read $fp $fsize]
@@ -45,3 +47,4 @@ for {set x 0} {$x < $streamlen} {incr x} {
   }
 }
 puts $total
+*/
