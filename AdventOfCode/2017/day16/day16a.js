@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day16.txt"]
 set fp [open "day16.txt" r]
 set instructions [read $fp $fsize]
@@ -37,3 +38,4 @@ foreach i $instructions {
 }
 
 puts $stage
+*/

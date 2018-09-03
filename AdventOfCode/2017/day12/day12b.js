@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day12.txt"]
 set fp [open "day12.txt" r]
 set pipes [read $fp $fsize]
@@ -34,3 +35,4 @@ for {set x 0} {$x < [llength $pipes]} {incr x} {
   }
 }
 puts $queuecount
+*/

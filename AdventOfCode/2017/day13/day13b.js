@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day13.txt"]
 set fp [open "day13.txt" r]
 set levels [read $fp $fsize]
@@ -31,3 +32,4 @@ for {set z 10} {$z < ($z + 1)} {incr z} {
     break
   }
 }
+*/

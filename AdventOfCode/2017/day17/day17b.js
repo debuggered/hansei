@@ -1,3 +1,4 @@
+/*
 set max 49999999
 set spin 366
 
@@ -22,3 +23,4 @@ for {set level 1} {$level <= $max} {incr level} {
   set stage [linsert $stage $current $level]
 }
 puts [lindex $stage [expr {[lsearch $stage 0] + 1}]]
+*/

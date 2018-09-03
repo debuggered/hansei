@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day16.txt"]
 set fp [open "day16.txt" r]
 set instructions [read $fp $fsize]
@@ -50,3 +51,4 @@ for {set z 0} {$z < $cycleplus} {incr z} {
   }
 }
 puts [join $stage ""]
+*/

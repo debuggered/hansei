@@ -1,3 +1,5 @@
+
+/*
 set fsize [file size "day10.txt"]
 set fp [open "day10.txt" r]
 set instructions [read $fp $fsize]
@@ -42,3 +44,4 @@ foreach steps $instructions {
 }
 puts [expr {[lindex $circle 0] * [lindex $circle 1]}]
 
+*/

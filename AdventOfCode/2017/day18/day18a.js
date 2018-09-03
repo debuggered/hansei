@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day18.txt"]
 set fp [open "day18.txt" r]
 set stream [read $fp $fsize]
@@ -54,3 +55,4 @@ for {set x 0} {$x <  [llength $stream] } {incr x} {
     }
   }
 }
+*/

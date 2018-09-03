@@ -1,3 +1,4 @@
+/*
 set limit 12425180
 set current $limit
 set state A
@@ -81,4 +82,4 @@ for {set x 0} {$x < $limit} {incr x} {
   }
 }
 puts [regexp -all {\s1\s} [array get tape]]
-
+*/

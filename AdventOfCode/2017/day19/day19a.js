@@ -1,3 +1,4 @@
+/*
 set fsize [file size "day19.txt"]
 set fp [open "day19.txt" r]
 set routes [read $fp $fsize]
@@ -57,3 +58,4 @@ while {[expr {[string match "A" $currentchar]}] == 0} {
 	set direction $next
 }
 puts $stringscollected
+*/

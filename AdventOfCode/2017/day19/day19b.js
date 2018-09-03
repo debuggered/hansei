@@ -1,3 +1,4 @@
+/*
 # NDWHOYRUEA
 set fsize [file size "day19.txt"]
 set fp [open "day19.txt" r]
@@ -60,3 +61,4 @@ while {[expr {[string match "A" $currentchar]}] == 0} {
 	set direction $next
 }
 puts $steps
+*/
